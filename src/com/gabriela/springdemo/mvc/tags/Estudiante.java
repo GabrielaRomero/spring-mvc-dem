@@ -13,6 +13,8 @@ public class Estudiante {
 	
 	private String lenguajeFvorito;
 	
+	private String[] sistemaOperativo; 
+	
 	public Estudiante() {
 		
 		opcionesCiudad = new LinkedHashMap<>();
@@ -76,6 +78,15 @@ public class Estudiante {
 	public void setOpcionesLenguaje(LinkedHashMap<String, String> opcionesLenguaje) {
 		this.opcionesLenguaje = opcionesLenguaje;
 	}
+
+	public String[] getSistemaOperativo() {
+		return sistemaOperativo;
+	}
+
+	public void setSistemaOperativo(String[] sistemaOperativo) {
+		this.sistemaOperativo = sistemaOperativo;
+	}
+	
 	
 	
 	

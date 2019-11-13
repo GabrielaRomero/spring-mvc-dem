@@ -41,6 +41,14 @@
 		 PHP<form:radiobutton path="lenguajeFvorito" value="PHP"/>
 		 RUBY<form:radiobutton path="lenguajeFvorito" value="Ruby"/>
 		 --%>
+		 
+		 
+		 <br>
+		 <br>
+		 Operating Systems: 
+		 Linux <form:checkbox path="sistemaOperativo" value="Linux"/>
+		 Windows <form:checkbox path="sistemaOperativo" value="Windows"/>
+		 IOS <form:checkbox path="sistemaOperativo" value="IOS"/>
 		
 		<input type="submit"  value="Enviar"/>
 		
