@@ -13,7 +13,7 @@
 	<br>	
 	
 	<body>
-		<form:form action="prossesForm" modelAttribute="modeloCustumer">
+		<form:form action="processForm" modelAttribute="modeloCustumer">
 		
 			first name(*): <form:input path="nombre"/>
 			<form:errors path="nombre"  cssClass="error"></form:errors>
@@ -25,6 +25,17 @@
 			
 			<br>
 			<br>
+			
+			Free passes: 
+			<form:input path="freePasses"/>
+			<form:errors path="freePasses" cssClass="error"></form:errors>
+			
+			<br>
+			<br>
+			
+			Codigo postal: 
+			<form:input path="codigoPostal"/>
+			<form:errors path="codigoPostal" cssClass="error"></form:errors>
 			
 			<input type="submit" value="Enviar">
 		</form:form>
