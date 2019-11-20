@@ -39,6 +39,10 @@ public class ClienteController {
 	public String processForm(
 							 @Valid @ModelAttribute("modeloCustumer") Cliente thecustumer, 
 							 BindingResult theBindingResult) {
+		
+		System.out.println("Bindign Result: "+theBindingResult);
+		
+		System.out.println("\n\n\n\n");
 		if(theBindingResult.hasErrors()) {
 			return "cliente-form";
 		}else {

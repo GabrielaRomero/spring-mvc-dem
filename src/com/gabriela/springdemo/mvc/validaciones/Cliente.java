@@ -15,9 +15,11 @@ public class Cliente {
 	
 	private String apellido;
 	
+	@NotNull(message="El campo es requerido")
 	@Min(value=0, message="Debe ser mayor o igual a cero")
 	@Max(value=10, message="Debe ser menor o iguala  10")
-	private int freePasses;
+	private Integer freePasses;
+	
 	
 	@Pattern(regexp="^[a-zA-Z0-9]{5}" , message="Solo 5 cacracteres/digitos")
 	private String codigoPostal;
@@ -42,10 +44,10 @@ public class Cliente {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
-	public int getFreePasses() {
+	public Integer getFreePasses() {
 		return freePasses;
 	}
-	public void setFreePasses(int freePasses) {
+	public void setFreePasses(Integer freePasses) {
 		this.freePasses = freePasses;
 	}
 	public String getCodigoPostal() {

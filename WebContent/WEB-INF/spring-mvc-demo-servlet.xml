@@ -36,6 +36,13 @@
 	<!--agregar entrada para  el usos de recurso js, css imagenes entre otro  -->
 	<mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources> 
 	
+	<!-- Cargar mesagges preperties para custumer -->
+    <bean id="messageSource" 
+          class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames" value="resources/messages" />
+     
+    </bean>
+	
 	
 	<!-- Agregar archivo propeties se l genera un id para que puda ser utilizado en una inyeccion -->
 	<util:properties id="propertiesOpcionesCity" location="classpath:../ciudades.properties" />
