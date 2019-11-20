@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.gabriela.springdemo.mvc.validacionesAnotaciones.CourseCode;
+
 public class Cliente {
 	
 	@NotNull(message="El campo es requerido")
@@ -23,6 +25,9 @@ public class Cliente {
 	
 	@Pattern(regexp="^[a-zA-Z0-9]{5}" , message="Solo 5 cacracteres/digitos")
 	private String codigoPostal;
+	
+	@CourseCode
+	private String courseCode;
 	
 	
 	
@@ -55,6 +60,12 @@ public class Cliente {
 	}
 	public void setCodigoPostal(String codigoPostal) {
 		this.codigoPostal = codigoPostal;
+	}
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
 	
 	

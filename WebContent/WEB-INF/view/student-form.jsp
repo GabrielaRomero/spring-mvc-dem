@@ -4,7 +4,7 @@
 <head>
 	<title>Formulario de Regito de Esudiante</title>
 </head>
-<body>
+<body>            
 	<!--modelAtribute: es el que de definio en el contolador 
 	
 	  -->
