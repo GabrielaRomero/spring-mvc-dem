@@ -17,6 +17,7 @@ public class Cliente {
 	
 	private String apellido;
 	
+
 	@NotNull(message="El campo es requerido")
 	@Min(value=0, message="Debe ser mayor o igual a cero")
 	@Max(value=10, message="Debe ser menor o iguala  10")
@@ -26,16 +27,18 @@ public class Cliente {
 	@Pattern(regexp="^[a-zA-Z0-9]{5}" , message="Solo 5 cacracteres/digitos")
 	private String codigoPostal;
 	
-	@CourseCode
+	//@CourseCode(value="LUV", message="must start with TOPS")
+	@CourseCode(value={"TOPS", "LUV"}, message="must start with TOPS or LUV")
 	private String courseCode;
+
 	
-	
-	
-	
-	
-	
-	
-	
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
 	
 	public String getNombre() {
 		return nombre;
@@ -60,13 +63,7 @@ public class Cliente {
 	}
 	public void setCodigoPostal(String codigoPostal) {
 		this.codigoPostal = codigoPostal;
-	}
-	public String getCourseCode() {
-		return courseCode;
-	}
-	public void setCourseCode(String courseCode) {
-		this.courseCode = courseCode;
-	}
+
 	
 	
 	

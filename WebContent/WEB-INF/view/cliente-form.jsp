@@ -37,6 +37,16 @@
 			<form:input path="codigoPostal"/>
 			<form:errors path="codigoPostal" cssClass="error"></form:errors>
 			
+			<br>
+			<br>
+			
+			Codigo curso: 
+			<form:input path="courseCode"/>
+			<form:errors path="courseCode" cssClass="error"></form:errors>
+			
+			<br>
+			<br>
+			
 			<input type="submit" value="Enviar">
 		</form:form>
 	
